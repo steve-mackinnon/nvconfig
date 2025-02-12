@@ -18,6 +18,9 @@ map("n", "<leader>gg", function()
   vim.bo.bufhidden = "delete" -- close the terminal when window closes
   vim.api.nvim_feedkeys(command, "n", false)
 end, { desc = "Launch lazygit" })
+map("n", "<leader><tab>", function()
+  require("telescope.builtin").buffers { sort_mru = true, ignore_current_buffer = true }
+end)
 map("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
