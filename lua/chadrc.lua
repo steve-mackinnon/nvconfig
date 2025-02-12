@@ -14,10 +14,6 @@ M.base46 = {
 	-- },
 }
 
-M.term = {
-  shell = "/opt/homebrew/bin/fish",
-}
-
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
 --       tabufline = {
