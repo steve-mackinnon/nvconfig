@@ -41,4 +41,9 @@ return {
   {
     "carbon-steel/detour.nvim",
   },
+  {
+    "almo7aya/openingh.nvim",
+    opts = {},
+    lazy = false,
+  },
 }
