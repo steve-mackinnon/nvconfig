@@ -20,6 +20,18 @@ vim.api.nvim_create_autocmd("BufEnter", {
   end
 })
 
+-- enter insert mode when focusing the terminal
+vim.api.nvim_create_autocmd("WinEnter", {
+    pattern = "term://*",
+    callback = function()
+        local current_win = vim.api.nvim_get_current_win()
+        if vim.api.nvim_buf_get_option(vim.api.nvim_win_get_buf(current_win), "buftype") == "terminal" then
+            vim.api.nvim_feedkeys("a", "n", false)
+        end
+    end,
+})
+
+
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
