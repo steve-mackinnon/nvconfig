@@ -6,6 +6,9 @@ vim.opt.guicursor = {
 }
 
 vim.opt.shell = "fish"
+vim.opt.number = true
+
+vim.g.maplocalleader = ","
 
 -- autoclose nvim tree
 vim.api.nvim_create_autocmd("BufEnter", {
