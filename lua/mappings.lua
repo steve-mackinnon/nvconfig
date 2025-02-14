@@ -28,7 +28,10 @@ map("n", "<leader>oc", "<cmd>GitBlameOpenCommitURL<cr>", { desc = "Open this com
 map("n", "<leader>f", function()
   vim.diagnostic.open_float { border = "rounded" }
 end, { desc = "Show floating diagnostic window" })
-
+map("n", "+", "<cmd>resize +1<CR>")
+map("n", "-", "<cmd>resize -1<CR>")
+map("n", "{", "<cmd>vertical resize +1<CR>")
+map("n", "}", "<cmd>vertical resize -1<CR>")
 -- visual mappings
 map("v", "<leader>gf", "<cmd>OpenInGHFileLines<CR>", { desc = "Open file on remote" })
 
