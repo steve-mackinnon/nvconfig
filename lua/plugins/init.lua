@@ -37,7 +37,7 @@ return {
       },
     },
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    lazy = false,
+    event = "VeryLazy",
   },
   {
     "carbon-steel/detour.nvim",
@@ -45,13 +45,17 @@ return {
   {
     "almo7aya/openingh.nvim",
     opts = {},
-    lazy = false,
+    event = "VeryLazy",
   },
   { "Olical/conjure", ft = "clojure" },
   {
     "clojure-vim/vim-jack-in",
     ft = "clojure",
     dependencies = { "radenling/vim-dispatch-neovim", "tpope/vim-dispatch" },
+  },
+  {
+    "f-person/git-blame.nvim",
+    event = "VeryLazy",
   },
   {
     "yetone/avante.nvim",
