@@ -25,6 +25,9 @@ end)
 map("n", "<leader>gf", "<cmd>OpenInGHFile<CR>", { desc = "Open file on remote" })
 map("n", "<leader>cb", "<cmd>BDelete! hidden<cr>", { desc = "Close all open buffers" })
 map("n", "<leader>oc", "<cmd>GitBlameOpenCommitURL<cr>", { desc = "Open this commit in a browser" })
+map("n", "<leader>f", function()
+  vim.diagnostic.open_float { border = "rounded" }
+end, { desc = "Show floating diagnostic window" })
 
 -- visual mappings
 map("v", "<leader>gf", "<cmd>OpenInGHFileLines<CR>", { desc = "Open file on remote" })
