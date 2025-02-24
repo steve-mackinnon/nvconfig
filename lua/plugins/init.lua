@@ -12,7 +12,16 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      actions = {
+        open_file = {
+          resize_window = false,
+        },
+      },
+    },
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
