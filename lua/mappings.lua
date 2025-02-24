@@ -32,6 +32,8 @@ map("n", "+", "<cmd>resize +1<CR>")
 map("n", "-", "<cmd>resize -1<CR>")
 map("n", "{", "<cmd>vertical resize +1<CR>")
 map("n", "}", "<cmd>vertical resize -1<CR>")
+map("n", "<leader>fu", require('telescope.builtin').grep_string, { desc = "Find word under cursor" })
+
 -- visual mappings
 map("v", "<leader>gf", "<cmd>OpenInGHFileLines<CR>", { desc = "Open file on remote" })
 
